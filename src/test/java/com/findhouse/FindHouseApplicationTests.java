@@ -1,4 +1,4 @@
-package com.example.findhouse;
+package com.findhouse;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
