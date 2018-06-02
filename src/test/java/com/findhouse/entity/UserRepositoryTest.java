@@ -20,6 +20,6 @@ public class UserRepositoryTest extends ApplicationTests {
     public void testFindOne() {
         //这种测试是直接使用的mysql数据库，注意测试最好配置为h2内存数据库
         User user = userRepository.findById(1L).get();
-        Assert.assertEquals("json", user.getName());
+        Assert.assertEquals("jsonjson", user.getName());
     }
 }

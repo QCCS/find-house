@@ -1,25 +1,10 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : xunwu
- Source Server Type    : MySQL
- Source Server Version : 50634
- Source Host           : 10.94.169.234
- Source Database       : xunwu
-
- Target Server Type    : MySQL
- Target Server Version : 50634
- File Encoding         : utf-8
-
- Date: 12/05/2017 23:07:26 PM
-*/
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
-DROP DATABASE IF EXISTS `xunwu`;
-CREATE DATABASE `xunwu`;
-USE `xunwu`;
+DROP DATABASE IF EXISTS `findhouse`;
+CREATE DATABASE `findhouse`;
+USE `findhouse`;
 
 -- ----------------------------
 --  Table structure for `house`
