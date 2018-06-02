@@ -9,10 +9,14 @@ import java.util.Date;
 import java.util.List;
 
 
+//加Entity注解，使jpa能够扫描到该实体
 @Entity
+//真实数据库的表名
 @Table(name = "user")
 public class User implements UserDetails {
+    //主键
     @Id
+    //GenerationType.IDENTITY同时兼容h2与mysql，GenerationType.auto只是针对mysql
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -22,6 +26,7 @@ public class User implements UserDetails {
 
     private String email;
 
+    //指定列的真实字段名
     @Column(name = "phone_number")
     private String phoneNumber;
 
