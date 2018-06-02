@@ -17,8 +17,10 @@ import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 
 
+//过时的处理
+//WebMvcConfigurerAdapter
 @Configuration
-public class WebMvcConfig extends WebMvcAutoConfiguration implements ApplicationContextAware {
+public class WebMvcConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
     @Value("${spring.thymeleaf.cache}")
     private boolean thymeleafCacheEnable = true;
 
@@ -32,10 +34,10 @@ public class WebMvcConfig extends WebMvcAutoConfiguration implements Application
     /**
      * 静态资源加载配置
      */
-//    @Override
-//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-//        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
-//    }
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+    }
 
     /**
      * 模板资源解析器
