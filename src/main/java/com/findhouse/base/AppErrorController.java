@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.ServletRequestAttributes;
+import org.springframework.web.context.request.WebRequest;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -59,7 +60,6 @@ public class AppErrorController implements ErrorController {
 //    @ResponseBody
 //    public ApiResponse errorApiHandler(HttpServletRequest request) {
 //        RequestAttributes requestAttributes = new ServletRequestAttributes(request);
-//
 //
 //        Map<String, Object> attr = this.errorAttributes.getErrorAttributes(requestAttributes, false);
 //        int status = getStatus(request);

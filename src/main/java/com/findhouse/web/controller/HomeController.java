@@ -11,4 +11,22 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping("/403")
+    public String accessErorr(Model model) {
+        return "403";
+    }
+    @GetMapping("/404")
+    public String notFoundPage(Model model) {
+        return "404";
+    }
+
+    @GetMapping("/500")
+    public String internalErorr(Model model) {
+        return "500";
+    }
+
+    @GetMapping("/logout")
+    public String logoutPage(Model model) {
+        return "logout";
+    }
 }

@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 //单元测试走测试环境配置
-//@ActiveProfiles("test")
+@ActiveProfiles("test")
 //还有问题没有解决，一定使用测试数据库就报错
 public class ApplicationTests {
 
