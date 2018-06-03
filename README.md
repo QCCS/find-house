@@ -10,3 +10,6 @@
 2.spring mvc配置
 //过时的处理
 //WebMvcConfigurerAdapter
+
+3.AppErrorController
+统一错误处理

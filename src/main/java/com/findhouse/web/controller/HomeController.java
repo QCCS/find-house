@@ -1,4 +1,4 @@
-package com.findhouse.controller;
+package com.findhouse.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
